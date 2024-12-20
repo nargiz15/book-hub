@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { X, CreditCard, Truck, Check } from 'lucide-react';
-import '../assets/order.css'
-import '../assets/cardsection.css'
+import '../assets/styles/order.css'
+import '../assets/styles/cardsection.css'
 const CartSection = ({ cart, total, onRemoveFromCart }) => {
   const [isCheckoutOpen, setIsCheckoutOpen] = useState(false);
   const [checkoutStep, setCheckoutStep] = useState(1);

@@ -1,9 +1,31 @@
+import AliNino from '../assets/images/Ali_ve_Nino.png'
+import DedeQorqud from '../assets/images/kitabi-dede-qorqud.png'
+import Riyaziyyat from '../assets/images/Riyaziyyat.jpeg'
+import Python from '../assets/images/Pyhton.jpeg'
+import Medeniyyet from '../assets/images/medeniyyet.webp'
+import IncesenetTarixi from '../assets/images/incesenet tarixi.jpg'
+import Xemse from '../assets/images/xemse.jpg'
+import Kimya from '../assets/images/Kimya.jpg'
+import PHP from '../assets/images/Php Proqramlasdirma.png'
+import AzTarixi from '../assets/images/AzTarixi.jpg'
+import JS from '../assets/images/JS.jpg'
+import C from '../assets/images/C++.jpg'
+import CleanCode from '../assets/images/Clean Code.jpg'
+import Algorithms from '../assets/images/Algorithms.jpg'
+import React from '../assets/images/React.jpg'
+import Vuejs from '../assets/images/vue.jpg'
+import Nodejs from '../assets/images/Nodejs.jpg'
+import MachineLearning from '../assets/images/MachineLearning.jpeg'
+import DataScience from '../assets/images/DataScience.jpg'
+import Deephyton from '../assets/images/Deephyton.jpg'
+
+
 const initialBooks = [
     {
         id: 1,
         title: 'Əli və Nino',
         author: 'Qurban Səid',
-        img: 'https://static.insales-cdn.com/images/products/1/5847/626300631/Ali_ve_Nino_kapak_2022.png',
+        img: AliNino,
         price: 10,
         category: 'Roman',
         stock: 10,
@@ -12,7 +34,7 @@ const initialBooks = [
     },
     {
         id: 2,
-        img: 'https://www.teaspress.az/storage/1983/conversions/kitabi-dede-qorqud-ve-qeyri-selis-mentiq-front-book.png',
+        img: DedeQorqud,
         title: 'Dədə Qorqud',
         author: 'Xalq dastanı',
         price: 8,
@@ -23,7 +45,7 @@ const initialBooks = [
     },
     {
         id: 3,
-        img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTow4Y3yprZRCs9o53PnlWGjGK94bMHUDfEZw&s',
+        img: Riyaziyyat,
         title: 'Riyaziyyat',
         author: 'Cahangir Həbiboğlu',
         price: 7,
@@ -34,7 +56,7 @@ const initialBooks = [
     },
     {
         id: 4,
-        img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrbtloDW6LOfTSFlufL9ugpzAen6zDkRcWuA&s',
+        img: Python,
         title: 'Python',
         author: 'Əli Rzayev',
         price: 15,
@@ -45,7 +67,7 @@ const initialBooks = [
     },
     {
         id: 5,
-        img: 'https://imgv2-2-f.scribdassets.com/img/document/675084369/original/e6cd55b70a/1730563471?v=1',
+        img: Medeniyyet,
         title: 'İtmiş Mədəniyyət',
         author: 'Fuad Qasımzadə',
         price: 5,
@@ -58,7 +80,7 @@ const initialBooks = [
         id: 6,
         title: 'İncəsənət Tarixi',
         author: 'Rasim Əfəndi',
-        img: 'https://lib.az/users/1/upload/images/inc.jpg',
+        img: IncesenetTarixi,
         price: 8,
         category: 'Sənət',
         stock: 7,
@@ -69,7 +91,7 @@ const initialBooks = [
         id: 7,
         title: 'Xəmsə',
         author: 'Nizami Gəncəvi',
-        img: 'https://www.teaspress.az/storage/2307/conversions/xemse-front-book.jpg',
+        img: Xemse,
         price: 10,
         category: 'Klassik',
         stock: 5,
@@ -80,7 +102,7 @@ const initialBooks = [
         id: 8,
         title: 'Kimya',
         author: 'Validə Əliyeva',
-        img: 'https://tap.azstatic.com/uploads/full/2024%2F07%2F22%2F13%2F00%2F06%2Ffbff4bd3-5aa7-4153-bf22-8019ac654869%2F73879_Llsf7HE7T9ZVmMOurKtMGQ.jpg',
+        img: Kimya,
         price: 12,
         category: 'Dərslik',
         stock: 15,
@@ -91,7 +113,7 @@ const initialBooks = [
         id: 9,
         title: 'Proqramlaşdırma',
         author: 'Rəşad Məmmədov',
-        img: 'https://php.kitab.ilkaddimlar.com/img/photo/book_3.png',
+        img: PHP,
         price: 14,
         category: 'IT',
         stock: 10,
@@ -102,7 +124,7 @@ const initialBooks = [
         id: 10,
         title: 'Azərbaycan Tarixi',
         author: 'Ziya Bünyadov',
-        img: 'https://lib.az/users/1/upload/images/mehman.jpg',
+        img: AzTarixi,
         price: 11,
         category: 'Tarix',
         stock: 18,
@@ -113,7 +135,7 @@ const initialBooks = [
         id: 11,
         title: 'JavaScript: The Good Parts',
         author: 'Douglas Crockford',
-        img: 'https://m.media-amazon.com/images/I/7185IMvz88L._AC_UF894,1000_QL80_.jpg',
+        img: JS,
         price: 18,
         category: 'IT',
         stock: 20,
@@ -124,7 +146,7 @@ const initialBooks = [
         id: 12,
         title: 'C++ Programming Language',
         author: 'Bjarne Stroustrup',
-        img: 'https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1347400993i/112251.jpg',
+        img: C,
         price: 25,
         category: 'IT',
         stock: 15,
@@ -135,7 +157,7 @@ const initialBooks = [
         id: 13,
         title: 'Clean Code',
         author: 'Robert C. Martin',
-        img: 'https://m.media-amazon.com/images/I/51E2055ZGUL.jpg',
+        img: CleanCode,
         price: 30,
         category: 'IT',
         stock: 18,
@@ -145,7 +167,7 @@ const initialBooks = [
     {
         id: 14,
         title: 'Introduction to Algorithms',
-        author: 'Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, Clifford Stein',
+        author: Algorithms,
         img: 'https://m.media-amazon.com/images/I/61Pgdn8Ys-L._AC_UF894,1000_QL80_.jpg',
         price: 40,
         category: 'IT',
@@ -157,7 +179,7 @@ const initialBooks = [
         id: 15,
         title: 'Learning React',
         author: 'Alex Banks & Eve Porcello',
-        img: 'https://m.media-amazon.com/images/I/91uFdkCJmAL._AC_UF1000,1000_QL80_.jpg',
+        img: React,
         price: 22,
         category: 'IT',
         stock: 12,
@@ -168,7 +190,7 @@ const initialBooks = [
         id: 16,
         title: 'Vue.js Up and Running',
         author: 'Callum Macrae',
-        img: 'https://m.media-amazon.com/images/I/91leSpWmFVL.jpg',
+        img: Vuejs,
         price: 18,
         category: 'IT',
         stock: 10,
@@ -179,7 +201,7 @@ const initialBooks = [
         id: 17,
         title: 'Node.js: The Right Way',
         author: 'Jim R. Wilson',
-        img: 'https://m.media-amazon.com/images/I/817QukxKtSL._AC_UF1000,1000_QL80_.jpg',
+        img: Nodejs,
         price: 1,
         category: 'IT',
         stock: 14,
@@ -190,7 +212,7 @@ const initialBooks = [
         id: 18,
         title: 'Machine Learning Yearning',
         author: 'Andrew Ng',
-        img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBPQE4Fasfkbp_u00xeNjwEGVkM5pXbAC5-w&s',
+        img: MachineLearning,
         price: 27,
         category: 'IT',
         stock: 9,
@@ -201,7 +223,7 @@ const initialBooks = [
         id: 19,
         title: 'Data Science from Scratch',
         author: 'Joel Grus',
-        img: 'https://m.media-amazon.com/images/I/812I0mhF0DL._AC_UF350,350_QL50_.jpg',
+        img: DataScience ,
         price: 28,
         category: 'IT',
         stock: 11,
@@ -212,7 +234,7 @@ const initialBooks = [
         id: 20,
         title: 'Deep Learning with Python',
         author: 'François Chollet',
-        img: 'https://m.media-amazon.com/images/I/61rjPAVepOL._AC_UF1000,1000_QL80_.jpg',
+        img: Deephyton,
         price: 35,
         category: 'IT',
         stock: 5,

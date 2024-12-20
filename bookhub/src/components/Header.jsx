@@ -1,6 +1,6 @@
 import React from 'react';
 import { ShoppingCart } from 'lucide-react';
-import '../assets/header.css'
+import '../assets/styles/header.css'
 
 const Header = ({ cartItemsCount }) => {
   return (

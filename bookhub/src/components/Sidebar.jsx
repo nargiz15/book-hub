@@ -1,6 +1,6 @@
 import React from 'react';
 import { Search } from 'lucide-react';
-import '../assets/sidebar.css'
+import '../assets/styles/sidebar.css'
 
 const Sidebar = ({ categories, selectedCategory, setSelectedCategory, searchQuery, setSearchQuery }) => {
   return (

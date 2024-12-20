@@ -1,6 +1,6 @@
 import React from 'react';
 import { Heart } from 'lucide-react';
-import '../assets/bookcard.css'
+import '../assets/styles/bookcard.css'
 
 const BookCard = ({ book, onAddToCart, onToggleFavorite, onShowDetail }) => {
   return (
