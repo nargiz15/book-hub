@@ -1,19 +1,19 @@
-'use client'
+"use client";
 
-import React, { useState } from 'react';
-import { X, CreditCard, Truck, Check } from 'lucide-react';
-import '../assets/styles/order.css'
-import '../assets/styles/cardsection.css'
+import React, { useState } from "react";
+import { X, CreditCard, Truck, Check } from "lucide-react";
+import "../assets/styles/order.css";
+import "../assets/styles/cardsection.css";
 const CartSection = ({ cart, total, onRemoveFromCart }) => {
   const [isCheckoutOpen, setIsCheckoutOpen] = useState(false);
   const [checkoutStep, setCheckoutStep] = useState(1);
   const [formData, setFormData] = useState({
-    fullName: '',
-    email: '',
-    phone: '',
-    address: '',
-    city: '',
-    paymentMethod: 'card'
+    fullName: "",
+    email: "",
+    phone: "",
+    address: "",
+    city: "",
+    paymentMethod: "card",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
@@ -23,14 +23,14 @@ const CartSection = ({ cart, total, onRemoveFromCart }) => {
   const handleInputChange = (e) => {
     setFormData({
       ...formData,
-      [e.target.name]: e.target.value
+      [e.target.name]: e.target.value,
     });
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
-    await new Promise(resolve => setTimeout(resolve, 1500));
+    await new Promise((resolve) => setTimeout(resolve, 1500));
     setIsSubmitting(false);
     setIsSuccess(true);
     setCheckoutStep(3);
@@ -41,12 +41,12 @@ const CartSection = ({ cart, total, onRemoveFromCart }) => {
     setCheckoutStep(1);
     setIsSuccess(false);
     setFormData({
-      fullName: '',
-      email: '',
-      phone: '',
-      address: '',
-      city: '',
-      paymentMethod: 'card'
+      fullName: "",
+      email: "",
+      phone: "",
+      address: "",
+      city: "",
+      paymentMethod: "card",
     });
   };
 
@@ -55,7 +55,7 @@ const CartSection = ({ cart, total, onRemoveFromCart }) => {
       <div className="cart-container">
         <h2 className="cart-title">Səbətiniz</h2>
         <div className="cart-items">
-          {cart.map(item => (
+          {cart.map((item) => (
             <div key={item.id} className="cart-item">
               <div className="cart-item-info">
                 <p className="cart-item-title">{item.title}</p>
@@ -75,7 +75,7 @@ const CartSection = ({ cart, total, onRemoveFromCart }) => {
             <span>Cəmi:</span>
             <span>{total} AZN</span>
           </div>
-          <button 
+          <button
             className="checkout-button"
             onClick={() => setIsCheckoutOpen(true)}
           >
@@ -90,37 +90,52 @@ const CartSection = ({ cart, total, onRemoveFromCart }) => {
             <div className="modal-content">
               <div className="modal-header">
                 <h2 className="modal-title">Sifariş</h2>
-                <button 
-                  className="close-button"
-                  onClick={resetCheckout}
-                >
+                <button className="close-button" onClick={resetCheckout}>
                   <X />
                 </button>
               </div>
 
               <div className="progress-steps">
                 <div className="step">
-                  <div className={`step-circle ${checkoutStep >= 1 ? 'active' : ''}`}>
-                    {checkoutStep > 1 ? <Check /> : '1'}
+                  <div
+                    className={`step-circle ${
+                      checkoutStep >= 1 ? "active" : ""
+                    }`}
+                  >
+                    {checkoutStep > 1 ? <Check /> : "1"}
                   </div>
                   <span className="step-text">Məlumatlar</span>
                 </div>
                 <div className="step">
-                  <div className={`step-circle ${checkoutStep >= 2 ? 'active' : ''}`}>
-                    {checkoutStep > 2 ? <Check /> : '2'}
+                  <div
+                    className={`step-circle ${
+                      checkoutStep >= 2 ? "active" : ""
+                    }`}
+                  >
+                    {checkoutStep > 2 ? <Check /> : "2"}
                   </div>
                   <span className="step-text">Ödəniş</span>
                 </div>
                 <div className="step">
-                  <div className={`step-circle ${checkoutStep >= 3 ? 'active' : ''}`}>
-                    {checkoutStep > 3 ? <Check /> : '3'}
+                  <div
+                    className={`step-circle ${
+                      checkoutStep >= 3 ? "active" : ""
+                    }`}
+                  >
+                    {checkoutStep > 3 ? <Check /> : "3"}
                   </div>
                   <span className="step-text">Təsdiq</span>
                 </div>
               </div>
 
               {checkoutStep === 1 && (
-                <form onSubmit={(e) => { e.preventDefault(); setCheckoutStep(2); }} className="form-container">
+                <form
+                  onSubmit={(e) => {
+                    e.preventDefault();
+                    setCheckoutStep(2);
+                  }}
+                  className="form-container"
+                >
                   <div className="form-group">
                     <label className="form-label">Ad Soyad</label>
                     <input
@@ -188,19 +203,19 @@ const CartSection = ({ cart, total, onRemoveFromCart }) => {
                       type="radio"
                       name="paymentMethod"
                       value="card"
-                      checked={formData.paymentMethod === 'card'}
+                      checked={formData.paymentMethod === "card"}
                       onChange={handleInputChange}
                     />
                     <CreditCard className="payment-icon" />
                     <span>Kart ilə ödəniş</span>
                   </label>
-                  
+
                   <label className="payment-option">
                     <input
                       type="radio"
                       name="paymentMethod"
                       value="cash"
-                      checked={formData.paymentMethod === 'cash'}
+                      checked={formData.paymentMethod === "cash"}
                       onChange={handleInputChange}
                     />
                     <Truck className="payment-icon" />
@@ -212,7 +227,7 @@ const CartSection = ({ cart, total, onRemoveFromCart }) => {
                     disabled={isSubmitting}
                     className="button button-primary"
                   >
-                    {isSubmitting ? 'Gözləyin...' : 'Sifarişi təsdiqlə'}
+                    {isSubmitting ? "Gözləyin..." : "Sifarişi təsdiqlə"}
                   </button>
                 </div>
               )}
@@ -224,7 +239,8 @@ const CartSection = ({ cart, total, onRemoveFromCart }) => {
                   </div>
                   <h3 className="success-title">Sifariş uğurla tamamlandı!</h3>
                   <p className="success-message">
-                    Sifarişiniz qəbul edildi. Tezliklə sizinlə əlaqə saxlanılacaq.
+                    Sifarişiniz qəbul edildi. Tezliklə sizinlə əlaqə
+                    saxlanılacaq.
                   </p>
                   <button
                     onClick={resetCheckout}

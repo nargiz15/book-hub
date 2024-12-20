@@ -1,23 +1,3 @@
-import AliNino from '../assets/images/Ali_ve_Nino.png'
-import DedeQorqud from '../assets/images/kitabi-dede-qorqud.png'
-import Riyaziyyat from '../assets/images/Riyaziyyat.jpeg'
-import Python from '../assets/images/Pyhton.jpeg'
-import Medeniyyet from '../assets/images/medeniyyet.webp'
-import IncesenetTarixi from '../assets/images/incesenet tarixi.jpg'
-import Xemse from '../assets/images/xemse.jpg'
-import Kimya from '../assets/images/Kimya.jpg'
-import PHP from '../assets/images/Php Proqramlasdirma.png'
-import AzTarixi from '../assets/images/AzTarixi.jpg'
-import JS from '../assets/images/JS.jpg'
-import C from '../assets/images/C++.jpg'
-import CleanCode from '../assets/images/Clean Code.jpg'
-import Algorithms from '../assets/images/Algorithms.jpg'
-import React from '../assets/images/React.jpg'
-import Vuejs from '../assets/images/vue.jpg'
-import Nodejs from '../assets/images/Nodejs.jpg'
-import MachineLearning from '../assets/images/MachineLearning.jpeg'
-import DataScience from '../assets/images/DataScience.jpg'
-import Deephyton from '../assets/images/Deephyton.jpg'
 
 
 const initialBooks = [
@@ -25,7 +5,7 @@ const initialBooks = [
         id: 1,
         title: 'Əli və Nino',
         author: 'Qurban Səid',
-        img: AliNino,
+        img: '/images/Ali_ve_Nino.png',
         price: 10,
         category: 'Roman',
         stock: 10,
@@ -34,7 +14,7 @@ const initialBooks = [
     },
     {
         id: 2,
-        img: DedeQorqud,
+        img: '/images/kitabi-dede-qorqud.png',
         title: 'Dədə Qorqud',
         author: 'Xalq dastanı',
         price: 8,
@@ -45,7 +25,7 @@ const initialBooks = [
     },
     {
         id: 3,
-        img: Riyaziyyat,
+        img: '/images/Riyaziyyat.jpeg',
         title: 'Riyaziyyat',
         author: 'Cahangir Həbiboğlu',
         price: 7,
@@ -56,7 +36,7 @@ const initialBooks = [
     },
     {
         id: 4,
-        img: Python,
+        img: '/images/Pyhton.jpeg',
         title: 'Python',
         author: 'Əli Rzayev',
         price: 15,
@@ -67,7 +47,7 @@ const initialBooks = [
     },
     {
         id: 5,
-        img: Medeniyyet,
+        img: '/images/medeniyyet.webp',
         title: 'İtmiş Mədəniyyət',
         author: 'Fuad Qasımzadə',
         price: 5,
@@ -80,7 +60,7 @@ const initialBooks = [
         id: 6,
         title: 'İncəsənət Tarixi',
         author: 'Rasim Əfəndi',
-        img: IncesenetTarixi,
+        img: '/images/incesenet tarixi.jpg',
         price: 8,
         category: 'Sənət',
         stock: 7,
@@ -91,7 +71,7 @@ const initialBooks = [
         id: 7,
         title: 'Xəmsə',
         author: 'Nizami Gəncəvi',
-        img: Xemse,
+        img: '/images/xemse.jpg',
         price: 10,
         category: 'Klassik',
         stock: 5,
@@ -102,7 +82,7 @@ const initialBooks = [
         id: 8,
         title: 'Kimya',
         author: 'Validə Əliyeva',
-        img: Kimya,
+        img: '/images/Kimya.jpg',
         price: 12,
         category: 'Dərslik',
         stock: 15,
@@ -113,7 +93,7 @@ const initialBooks = [
         id: 9,
         title: 'Proqramlaşdırma',
         author: 'Rəşad Məmmədov',
-        img: PHP,
+        img: '/images/Php Proqramlasdirma.png',
         price: 14,
         category: 'IT',
         stock: 10,
@@ -124,7 +104,7 @@ const initialBooks = [
         id: 10,
         title: 'Azərbaycan Tarixi',
         author: 'Ziya Bünyadov',
-        img: AzTarixi,
+        img: '/images/AzTarixi.jpg',
         price: 11,
         category: 'Tarix',
         stock: 18,
@@ -135,7 +115,7 @@ const initialBooks = [
         id: 11,
         title: 'JavaScript: The Good Parts',
         author: 'Douglas Crockford',
-        img: JS,
+        img: '/images/JS.jpg',
         price: 18,
         category: 'IT',
         stock: 20,
@@ -146,7 +126,7 @@ const initialBooks = [
         id: 12,
         title: 'C++ Programming Language',
         author: 'Bjarne Stroustrup',
-        img: C,
+        img: '/images/C++.jpg',
         price: 25,
         category: 'IT',
         stock: 15,
@@ -157,7 +137,7 @@ const initialBooks = [
         id: 13,
         title: 'Clean Code',
         author: 'Robert C. Martin',
-        img: CleanCode,
+        img: '/images/Clean Code.jpg',
         price: 30,
         category: 'IT',
         stock: 18,
@@ -167,8 +147,8 @@ const initialBooks = [
     {
         id: 14,
         title: 'Introduction to Algorithms',
-        author: Algorithms,
-        img: 'https://m.media-amazon.com/images/I/61Pgdn8Ys-L._AC_UF894,1000_QL80_.jpg',
+        author: 'Algorithms',
+        img: '/images/Clean Code.jpg',
         price: 40,
         category: 'IT',
         stock: 8,
@@ -179,7 +159,7 @@ const initialBooks = [
         id: 15,
         title: 'Learning React',
         author: 'Alex Banks & Eve Porcello',
-        img: React,
+        img: '/images/React.jpg',
         price: 22,
         category: 'IT',
         stock: 12,
@@ -190,7 +170,7 @@ const initialBooks = [
         id: 16,
         title: 'Vue.js Up and Running',
         author: 'Callum Macrae',
-        img: Vuejs,
+        img: '/images/vue.jpg',
         price: 18,
         category: 'IT',
         stock: 10,
@@ -201,7 +181,7 @@ const initialBooks = [
         id: 17,
         title: 'Node.js: The Right Way',
         author: 'Jim R. Wilson',
-        img: Nodejs,
+        img: '/images/Nodejs.jpg',
         price: 1,
         category: 'IT',
         stock: 14,
@@ -212,7 +192,7 @@ const initialBooks = [
         id: 18,
         title: 'Machine Learning Yearning',
         author: 'Andrew Ng',
-        img: MachineLearning,
+        img: '/images/MachineLearning.jpeg',
         price: 27,
         category: 'IT',
         stock: 9,
@@ -223,7 +203,7 @@ const initialBooks = [
         id: 19,
         title: 'Data Science from Scratch',
         author: 'Joel Grus',
-        img: DataScience ,
+        img: '/images/DataScience.jpg',
         price: 28,
         category: 'IT',
         stock: 11,
@@ -234,7 +214,7 @@ const initialBooks = [
         id: 20,
         title: 'Deep Learning with Python',
         author: 'François Chollet',
-        img: Deephyton,
+        img: '/images/Deephyton.jpg',
         price: 35,
         category: 'IT',
         stock: 5,
