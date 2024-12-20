@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useState } from 'react';
 import { X, CreditCard, Truck, Check } from 'lucide-react';
 import '../assets/styles/order.css'
